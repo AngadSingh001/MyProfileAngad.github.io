@@ -64,43 +64,64 @@ body {
     color: #c8e6c9;
 }
 
-/* Section Styling */
-.section {
-    padding: 60px 0;
+/* Collapsible Tab (Accordion) Styling */
+.accordion-container {
+    max-width: 960px;
+    margin: 40px auto;
 }
 
-.section h2 {
-    text-align: center;
+.accordion-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    background-color: #e0f2f1;
     color: #004d40;
-    font-size: 2em;
-    margin-bottom: 40px;
-    position: relative;
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
 }
 
-.section h2::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 3px;
-    background-color: #004d40;
+.accordion-header:hover {
+    background-color: #c8e6c9;
 }
 
-.bg-light {
-    background-color: #f0f0f0;
+.accordion-header .fas {
+    font-size: 1em;
+    transition: transform 0.3s ease;
 }
 
-/* Experience and Project Entry Styling */
-.job-entry, .project-entry, .education-entry {
-    margin-bottom: 40px;
+.accordion-header.active .fas {
+    transform: rotate(-180deg);
 }
 
-.job-entry h3, .project-entry h3, .education-entry h3 {
+.accordion-content {
+    background-color: #fff;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion-content.active {
+    max-height: 1000px; /* A large value to allow the content to expand */
+    padding: 20px;
+}
+
+/* Internal Section Styling */
+.accordion-content h3 {
     color: #004d40;
     margin-bottom: 5px;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .job-date {
@@ -111,14 +132,13 @@ body {
 
 ul {
     list-style-type: none;
-    padding-left: 20px;
+    padding-left: 0;
 }
 
 li {
     margin-bottom: 10px;
 }
 
-/* Skills Grid */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -137,8 +157,5 @@ li {
     }
     .tagline {
         font-size: 1em;
-    }
-    .section {
-        padding: 40px 0;
     }
 }
