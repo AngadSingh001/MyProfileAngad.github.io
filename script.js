@@ -78,4 +78,29 @@ document.addEventListener("DOMContentLoaded", function() {
         `;
         educationContainer.innerHTML += eduHTML;
     });
+
+    // Accordion Logic
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+    accordionHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+            const currentItem = header.parentElement;
+            const content = header.nextElementSibling;
+            const isActive = header.classList.contains('active');
+
+            // Close all tabs and remove active class from all headers
+            document.querySelectorAll('.accordion-content').forEach(c => {
+                c.classList.remove('active');
+            });
+            accordionHeaders.forEach(h => {
+                h.classList.remove('active');
+            });
+
+            // If the clicked tab was not active, open it
+            if (!isActive) {
+                header.classList.add('active');
+                content.classList.add('active');
+            }
+        });
+    });
 });
