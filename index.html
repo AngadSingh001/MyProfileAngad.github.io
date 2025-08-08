@@ -26,39 +26,47 @@
         </div>
     </header>
 
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p id="about-content"></p>
+    <main class="accordion-container">
+        <div class="accordion-item">
+            <h2 class="accordion-header active">About Me <i class="fas fa-chevron-down"></i></h2>
+            <div class="accordion-content active">
+                <p id="about-content"></p>
+            </div>
         </div>
-    </section>
 
-    <section id="skills" class="section bg-light">
-        <div class="container">
-            <h2>Skills Summary</h2>
-            <div class="skills-grid" id="skills-list">
-                </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">Skills Summary <i class="fas fa-chevron-down"></i></h2>
+            <div class="accordion-content">
+                <div class="skills-grid" id="skills-list">
+                    </div>
+            </div>
         </div>
-    </section>
 
-    <section id="experience" class="section">
-        <div class="container" id="experience-container">
-            <h2>Work Experience</h2>
+        <div class="accordion-item">
+            <h2 class="accordion-header">Work Experience <i class="fas fa-chevron-down"></i></h2>
+            <div class="accordion-content">
+                <div id="experience-container">
+                    </div>
             </div>
-    </section>
+        </div>
 
-    <section id="projects" class="section bg-light">
-        <div class="container" id="projects-container">
-            <h2>Projects</h2>
+        <div class="accordion-item">
+            <h2 class="accordion-header">Projects <i class="fas fa-chevron-down"></i></h2>
+            <div class="accordion-content">
+                <div id="projects-container">
+                    </div>
             </div>
-    </section>
+        </div>
 
-    <section id="education" class="section">
-        <div class="container" id="education-container">
-            <h2>Education</h2>
+        <div class="accordion-item">
+            <h2 class="accordion-header">Education <i class="fas fa-chevron-down"></i></h2>
+            <div class="accordion-content">
+                <div id="education-container">
+                    </div>
             </div>
-    </section>
-    
+        </div>
+    </main>
+
     <script src="data.js"></script>
     <script src="script.js"></script>
 </body>
