@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angad Gadhok | Portfolio</title>
+    <title id="contact-name">Angad Gadhok | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -13,14 +13,14 @@
         <div class="container">
             <div class="header-content">
                 <img src="images/profile-picture.jpg" alt="Angad Gadhok" class="profile-pic">
-                <h1>Angad Preet Singh Gadhok</h1>
-                <p class="tagline">Full-Stack Developer | Application Support Analyst</p>
+                <h1 id="contact-name"></h1>
+                <p class="tagline" id="contact-tagline"></p>
                 <div class="contact-info">
-                    <p><i class="fas fa-map-marker-alt"></i> Mumbai, India</p>
-                    <p><i class="fas fa-phone"></i> +91 9082802254</p>
-                    <p><i class="fas fa-envelope"></i> angadpreetsinghwork@gmail.com</p>
-                    <p><a href="https://www.linkedin.com/in/angad-gadhok" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/angad-gadhok</a></p>
-                    <p><a href="https://github.com/ANGADPREETSINGHGADHOK" target="_blank"><i class="fab fa-github"></i> github.com/ANGADPREETSINGHGADHOK</a></p>
+                    <p id="contact-location"></p>
+                    <p id="contact-phone"></p>
+                    <p id="contact-email"></p>
+                    <p id="contact-linkedin"></p>
+                    <p id="contact-github"></p>
                 </div>
             </div>
         </div>
@@ -29,111 +29,37 @@
     <section id="about" class="section">
         <div class="container">
             <h2>About Me</h2>
-            <p>Highly motivated and detail-oriented professional with 2+ years of experience in full-stack development and application support. Proven ability to troubleshoot complex technical issues, optimize system performance, and collaborate cross-functionally to deliver high-quality solutions.</p>
+            <p id="about-content"></p>
         </div>
     </section>
 
     <section id="skills" class="section bg-light">
         <div class="container">
             <h2>Skills Summary</h2>
-            <div class="skills-grid">
-                <div>
-                    <h3>Front-End</h3>
-                    <ul>
-                        <li>JavaScript</li>
-                        <li>Angular</li>
-                        <li>Typescript</li>
-                        <li>React.js</li>
-                        <li>Bootstrap</li>
-                    </ul>
+            <div class="skills-grid" id="skills-list">
                 </div>
-                <div>
-                    <h3>Back-End</h3>
-                    <ul>
-                        <li>Java</li>
-                        <li>Python</li>
-                        <li>Spring Boot</li>
-                        <li>Node.js</li>
-                        <li>Express.js</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Database & DevOps</h3>
-                    <ul>
-                        <li>MySQL, MongoDB</li>
-                        <li>Jenkins, Docker</li>
-                        <li>AWS, Kubernetes</li>
-                        <li>Git, GitHub</li>
-                    </ul>
-                </div>
-            </div>
         </div>
     </section>
 
     <section id="experience" class="section">
-        <div class="container">
+        <div class="container" id="experience-container">
             <h2>Work Experience</h2>
-            <div class="job-entry">
-                <h3>Full Stack Developer- Analyst | TIAA</h3>
-                <p class="job-date">July 2023 - Present</p>
-                <ul>
-                    <li>Integrated iframe functionality into legacy apps via AEM, improving efficiency by 25%.</li>
-                    <li>Developed footer integration using MFE deployment for seamless user experience.</li>
-                    <li>Implemented Open Token for single-sign-on (SSO) with external clients.</li>
-                    <li>Developed an e-signature functionality to securely store user data.</li>
-                </ul>
             </div>
-            <div class="job-entry">
-                <h3>Web Developer Intern | Aditya Birla Sun Life Capital</h3>
-                <p class="job-date">May 2022 - July 2022</p>
-                <ul>
-                    <li>Revamped IFA and Investor Portal UI with AngularJS and Bootstrap, increasing revenue by 15%.</li>
-                    <li>Developed a ticket counter website using Angular, boosting team efficiency by 20%.</li>
-                </ul>
-            </div>
-        </div>
     </section>
 
     <section id="projects" class="section bg-light">
-        <div class="container">
+        <div class="container" id="projects-container">
             <h2>Projects</h2>
-            <div class="project-entry">
-                <h3>Food Delivery Website (MERN Stack)</h3>
-                <ul>
-                    <li>Developed a responsive frontend using React.js for user registration and order management.</li>
-                    <li>Integrated RESTful APIs with Express.js and Node.js for dynamic features.</li>
-                    <li>Optimized MongoDB database schema for real-time features.</li>
-                </ul>
             </div>
-            <div class="project-entry">
-                <h3>Exam Portal (Full Stack)</h3>
-                <ul>
-                    <li>Built an online exam portal with Angular and Material UI.</li>
-                    <li>Secured user data using WT authentication** with Spring Security.</li>
-                    <li>Deployed the application to AWS EC2, ensuring scalability.</li>
-                </ul>
-            </div>
-            <div class="project-entry">
-                <h3>Image Classification to Detect Skin Disorders (Machine Learning)</h3>
-                <ul>
-                    <li>Applied advanced data pre-processing techniques to the HAM10000 dataset.</li>
-                    <li>Utilized TensorFlow, Keras, and PyTorch to fine-tune pre-trained models.</li>
-                    <li>Achieved 92% accuracy in diagnosing skin disorders with a hybrid model.</li>
-                </ul>
-            </div>
-        </div>
     </section>
 
     <section id="education" class="section">
-        <div class="container">
+        <div class="container" id="education-container">
             <h2>Education</h2>
-            <div class="education-entry">
-                <h3>Mukesh Patel School of Technology Management & Engineering</h3>
-                <p>Bachelor of Technology in Information Technology & Engineering | GPA 3.63/4</p>
-                <p class="job-date">June 2019 - May 2023</p>
-                <p><strong>Relevant Coursework:</strong> Data Structures and Algorithms, Database Management System, Software Engineering</p>
             </div>
-        </div>
     </section>
+    
+    <script src="data.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
